@@ -46,7 +46,7 @@ export default function Home() {
     <Loader display={loaded} />
       <div className='bg-dark-300 w-full'>
         <Navbar display={loaded}></Navbar>
-        <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-96 h-screen overflow-y-auto ' id='mainPage'>
+        <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-96 h-screen overflow-y-auto overflow-x-hidden ' id='mainPage'>
 
           <Landing display={loaded} />
           <About display={scroll500}></About>
