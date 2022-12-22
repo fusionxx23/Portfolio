@@ -18,7 +18,7 @@ export default function Navbar({ display }: { display: boolean }) {
                         Resume
                     </div>
                 </div>
-                <div>Hamburger</div>
+                <div className='sm:hidden'>Hamburger</div>
             </div>
         </div>
 
