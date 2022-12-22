@@ -8,7 +8,7 @@ export default function About({display} :{display: boolean}) {
   return (
     <div style={{minHeight:'200px'}} className={`duration-700 h-screen transition-all ${anim} ${display ? ' opacity-100 translate-x-0 translate-y-0 ' : 'opacity-0 translate-y-24 translate-x-24'}`}>
       <h1 className='text-light-200 font-chivo font-bold z-40 mb-10 text-2xl sm:text-4xl' >About Me</h1>
-      <div className='flex flex-wrap justify-between'>
+      <div className='flex flex-wrap md:flex-nowrap justify-between'>
         <div className='text-light-200 text-sm'>
           <h2>{text}</h2>
         </div>
