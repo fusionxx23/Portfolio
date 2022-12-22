@@ -3,9 +3,9 @@ import React from 'react'
 export default function Landing({ display }: { display: boolean }) {
     const c = '-translate-y-6 opacity-100'
     const dis = display ? c : 'opacity-0'
-    const anim = 'transition-all ease-out duration-500'
+    const anim = 'transition-opacity transition-up ease-out duration-500'
     return (
-        <main className={`flex font-poppins justify-center text-light-100  h-screen mb-20`} style={{minHeight:'200px'}}>
+        <main className={`flex font-poppins justify-center text-light-100 h-screen mb-20`} style={{minHeight:'200px'}}>
             <div className={`w-full mt-40 md:mt-72`}>
                 <h2 className={`mb-5 delay-500 text-md md:text-lg pl-1 ${dis} ${anim} font-chivo`}>Hi, my name is</h2>
                 <h1 className={`text-4xl md:text-7xl delay-700 mb-3 font-bold ${dis} ${anim}`} style={{ color: '#ccd6f6' }}>Travis Tarpley</h1>

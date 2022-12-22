@@ -10,7 +10,9 @@ module.exports = {
                 poppins: ['"Poppins"', "sans-serif"],
                 chivo: [`'Chivo Mono'`, `monospace`],
             },
-
+            transitionProperty: {
+                'up': 'opacity, transform'
+            },
             colors: {
                 dark: {
                     100: "#000c18",
