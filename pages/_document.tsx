@@ -1,8 +1,9 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export default function Document() {
+export default function document() {
+
   return (
-    <Html lang="en">
+    <Html>
       <Head />
       <body>
         <Main />
@@ -10,4 +11,5 @@ export default function Document() {
       </body>
     </Html>
   )
+
 }
