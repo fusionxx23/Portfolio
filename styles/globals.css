@@ -21,6 +21,10 @@
     background: rgba(0, 0, 0, 0);
 }
 
+body {
+    position: fixed;
+}
+
 
 /* Handle */
 
@@ -31,6 +35,11 @@
 
 
 /* Handle on hover */
+
+#__next {
+    width: 100vw;
+    max-width: 100vw;
+}
 
  ::-webkit-scrollbar-thumb:hover {
     background: #555;
