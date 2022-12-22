@@ -24,7 +24,7 @@ export default function About({display} :{display: boolean}) {
 function ImageSection() {
   const [hovering, setHovering] = useState(false);
   return (
-    <div className={'ml-10 relative w-64 h-64 md:w-80 md:h-96'}>
+    <div className={'ml-10 relative mt-5 w-64 h-64 md:mt-0 md:w-80 md:h-96'}>
       <div className={`absolute cursor-pointer top-5 left-5 ${hovering ? 'top-2 left-2' : ''} transition-all hover:top-2 border-light-100 border-2 w-48 h-48 md:w-80 md:h-80  rounded-full`}></div>
       <div onMouseOver={() => { setHovering(true) }} onMouseOut={() => { setHovering(false) }} className='z-20 absolute top-0 w-48 md:w-80'>
         <Image className='rounded-full' src={doodle} alt={''}></Image>
