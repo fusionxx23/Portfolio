@@ -5,11 +5,11 @@ export default function Navbar({ display }: { display: boolean }) {
     return (
 
         <div className={`absolute top-0 w-full z-10 duration-500 transition-all ${display ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 '} `}>
-            <div className="flex justify-between items-center px-20 pt-4">
+            <div className="flex justify-between items-center px-4 md:px-20 pt-4">
                 <div className='cursor-pointer'>
                     <h1 className='text-light-100 text-3xl' >TT</h1>
                 </div>
-                <div className='flex text-light-200 items-center'>
+                <div className='sm:flex hidden text-light-200 items-center'>
                     <NavLink title={'About'}></NavLink>
                     <NavLink title={'Experience'}></NavLink>
                     <NavLink title={'Work'}></NavLink>
@@ -18,6 +18,7 @@ export default function Navbar({ display }: { display: boolean }) {
                         Resume
                     </div>
                 </div>
+                <div>Hamburger</div>
             </div>
         </div>
 
@@ -27,8 +28,8 @@ export default function Navbar({ display }: { display: boolean }) {
 
 function NavLink({ title }: { title: string }) {
     return (
-        <Link className='mx-3 font-chivo' href={''}>
-            <h1 className='hover:text-light-100  text-lg cursor-pointer'>{title}<span className='text-light-100'>.</span></h1>
+        <Link className='mx-1 lg:mx-3 font-chivo' href={''}>
+            <h1 className='hover:text-light-100 text-sm  md:text-lg cursor-pointer'>{title}<span className='text-light-100'>.</span></h1>
 
         </Link>
     )
