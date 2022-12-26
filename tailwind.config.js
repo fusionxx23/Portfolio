@@ -11,7 +11,16 @@ module.exports = {
                 chivo: [`'Chivo Mono'`, `monospace`],
             },
             transitionProperty: {
-                'up': 'opacity, transform'
+                up: "opacity, transform",
+            },
+            spacing: {
+                '100': '25rem',
+                '104': '26rem',
+                '108': '27rem',
+                '112': '28rem',
+                '116': '29rem',
+                '120': '30rem',
+                '124': '31rem',
             },
             colors: {
                 dark: {
@@ -24,10 +33,10 @@ module.exports = {
                     200: "#051336",
                 },
                 light: {
-                    100: '#c285ff',
+                    100: "#c285ff",
                     200: "#ccd6f6",
                     300: "#8892b0",
-                    400: '#7c87a4'
+                    400: "#7c87a4",
                 },
             },
             transitionDelay: {

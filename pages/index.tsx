@@ -7,6 +7,8 @@ import Loader from '../components/Loader/Loader'
 import Landing from '../components/Landing'
 import { useEffect, useState } from 'react'
 import About from '../components/About'
+import SocialsRight from '../components/SocialsRight'
+import SocialsLeft from '../components/SocialsLeft'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -42,11 +44,14 @@ export default function Home() {
     }
   }, [loaded])
   return (
-    <>  
-    <Loader display={loaded} />
+    <>
+      <SocialsRight></SocialsRight>
+      <SocialsLeft />
+      <Loader display={loaded} />
       <div className='bg-dark-300 w-full'>
+
         <Navbar display={loaded}></Navbar>
-        <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-96 h-screen overflow-y-auto overflow-x-hidden ' id='mainPage'>
+        <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-108 h-screen overflow-y-auto overflow-x-hidden ' id='mainPage'>
 
           <Landing display={loaded} />
           <About display={scroll500}></About>
