@@ -6,9 +6,10 @@ import Navbar from '../components/Navbar'
 import Loader from '../components/Loader/Loader'
 import Landing from '../components/Landing'
 import { useEffect, useState } from 'react'
-import About from '../components/About'
+import About from '../components/About/About'
 import SocialsRight from '../components/SocialsRight'
 import SocialsLeft from '../components/SocialsLeft'
+import Work from '../components/Work'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,6 +33,7 @@ export default function Home() {
 
           <Landing display={loaded} />
           <About></About>
+          <Work/>
         </div>
 
       </div>
