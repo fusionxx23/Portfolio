@@ -15,9 +15,9 @@ export default function Work() {
       if (inView) {
         setDisplay(true);
       }
-    }} style={{ minHeight: '800px' }} className={`duration-700 h-60screen 2xl:px-10 transition-up ease-out 
+    }} className={`duration-700 h-screen md:h-60screen 2xl:px-10 transition-up ease-out 
       ${display ? ' opacity-100 translate-x-0 translate-y-0 ' : 'opacity-0 translate-y-24 translate-x-24'}`}>
-      <h1 className='text-light-200 font-chivo text-4xl text-center'>Previous Projects<PurpleSpan text={'.'} /></h1>
+      <h1 className='text-light-200 font-chivo font-bold z-40 mb-8 text-2xl sm:text-4xl md:text-center'>Previous Projects<PurpleSpan text={'.'} /></h1>
       {/* Projects */}
       <div className='grid grid-cols-1 md:grid-cols-2 mt-2 '>
         <Project title={'ASTERIA-AIO'} icons={[SiReact, SiElectron, SiTypescript, SiTailwindcss]} img={work}></Project>
@@ -34,7 +34,7 @@ function Project({ title, icons, img  }: { title: string, icons:any[], img:Stati
   const [imageHover, setImgHover] = useState(false);
   return (
     <div className='flex justify-center'>
-      <section className='w-full h-108 m-4 bg-dark-0 rounded-md p-6'>
+      <section className='w-full h-108 my-2 sm:m-4 bg-dark-0 rounded-md p-6'>
         <div className='flex justify-between'>
           <BsFillTerminalFill size={20} className='text-white hover:text-light-100' />
           <div className='text-light-200'>
