@@ -1,6 +1,7 @@
 import React from 'react'
+import {display} from '../libs/types'; 
 
-export default function SocialsRight() {
+export default function SocialsRight({display}: display) {
   return (
     <div className="fixed bottom-28 right-0 font-chivo  ">
       {/* <div className='flex justify-center items-center'>
