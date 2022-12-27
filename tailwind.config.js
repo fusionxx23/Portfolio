@@ -22,7 +22,9 @@ module.exports = {
                 '120': '30rem',
                 '124': '31rem',
                 '80screen': '80vh',
-                '60screen': '60bh',
+                '60screen': '60vh',
+                '40screen': '40vh',
+                '30screen': '30vh',
             },
             colors: {
                 dark: {
