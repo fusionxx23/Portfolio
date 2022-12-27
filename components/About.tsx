@@ -15,7 +15,7 @@ export default function About() {
         setDisplay(true);
 
       }
-    }} style={{ minHeight: '200px' }} className={`duration-700 h-screen px-10 transition-all ${anim} ${display ? ' opacity-100 translate-x-0 translate-y-0 ' : 'opacity-0 translate-y-24 translate-x-24'}`}>
+    }} style={{ minHeight: '200px' }} className={`duration-700 h-screen md:px-10 transition-up ${anim} ${display ? ' opacity-100 translate-x-0 translate-y-0 ' : 'opacity-0 translate-y-24 translate-x-24'}`}>
       <h1 className='text-light-200 font-chivo font-bold z-40 mb-8 text-2xl sm:text-4xl' >About Me<span className='text-light-100'>.</span></h1>
       <div className='flex flex-wrap md:flex-nowrap justify-between'>
         <div className='text-light-200 text-md font-chivo'>
@@ -48,7 +48,7 @@ export default function About() {
 function TechIcon({ Icon, title }: { Icon: any, title: string }) {
   return (
     <div className='mr-4 my-2 flex flex-col items-center'>
-      <h1 className='mb-1'>{title}</h1>
+      <h1 className='mb-1 text-xs md:text-md'>{title}</h1>
       <Icon className='text-light-100' size={20} />
     </div>
   )
