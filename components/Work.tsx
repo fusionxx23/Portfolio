@@ -15,7 +15,7 @@ export default function Work() {
       if (inView) {
         setDisplay(true);
       }
-    }} className={`duration-700 h-screen md:h-60screen 2xl:px-10 transition-up ease-out 
+    }} className={`duration-700 h-screen  2xl:px-10 transition-up ease-out 
       ${display ? ' opacity-100 translate-x-0 translate-y-0 ' : 'opacity-0 translate-y-3 translate-x-3 md:-translate-y-24 md:-translate-x-20'}`}>
       <h1 className='text-light-200 font-chivo font-bold z-40 mb-8 text-2xl sm:text-4xl md:text-center'>Previous Projects<PurpleSpan text={'.'} /></h1>
       {/* Projects */}
