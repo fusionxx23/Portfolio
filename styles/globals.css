@@ -33,10 +33,9 @@
 }
 
 .transition-up {
-    animation: up 700ms ease-out;
-    /* transition-property: opacity, transform;
+    transition-property: opacity, transform;
     transition-duration: 700ms;
-    transition-timing-function: ease-out; */
+    transition-timing-function: ease-out;
 }
 
 ::-webkit-scrollbar-track {
