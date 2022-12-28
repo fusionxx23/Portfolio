@@ -35,7 +35,7 @@
 .transition-up {
     transition-property: opacity, transform;
     transition-duration: 700ms;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 
 ::-webkit-scrollbar-track {
