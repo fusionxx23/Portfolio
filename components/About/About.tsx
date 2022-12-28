@@ -14,7 +14,7 @@ export default function About() {
       if (inView) {
         setDisplay(true);
       }
-    }} style={{ minHeight: '800px' }} className={` duration-700 h-80screen 2xl:px-10 transition-up ${anim} ${display ? ' opacity-100 translate-x-0 translate-y-0 ' : 'opacity-0 translate-y-24 translate-x-24'}`}>
+    }} style={{ minHeight: '800px' }} className={` duration-700 h-80screen 2xl:px-10 transition-up ${display ? ' opacity-100 translate-x-0 translate-y-0 ' : 'opacity-0 translate-y-24 translate-x-24'}`}>
       <h1 className='text-light-200 font-chivo font-bold z-40 mb-8 text-2xl sm:text-4xl' >About Me<span className='text-light-100'>.</span></h1>
       <div className='flex flex-wrap md:flex-nowrap justify-between'>
         <div className='text-light-200 text-md font-chivo'>
