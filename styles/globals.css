@@ -17,6 +17,10 @@
     height: 6px;
 }
 
+.transition-up {
+    transition-property: opacity, transform;
+}
+
  ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0);
 }

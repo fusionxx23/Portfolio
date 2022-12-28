@@ -11,7 +11,7 @@ module.exports = {
                 chivo: [`'Chivo Mono'`, `monospace`],
             },
             transitionProperty: {
-                up: "opacity, transform",
+
             },
             spacing: {
                 '100': '25rem',
