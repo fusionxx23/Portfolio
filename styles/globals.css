@@ -36,10 +36,20 @@
     transform: translateY(-20px);
 }
 
-.transition-up {
-    transition-property: transform, opacity;
-    transition-duration: 700ms;
-    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+@media screen and (min-width: 501px) {
+    .transition-up {
+        transition-property: transform, opacity;
+        transition-duration: 600ms;
+        transition-timing-function: ease-out;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .transition-up {
+        transition-property: transform, opacity;
+        transition-duration: 700ms;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
 }
 
 ::-webkit-scrollbar-track {
