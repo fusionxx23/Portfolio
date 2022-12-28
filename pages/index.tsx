@@ -26,7 +26,7 @@ export default function Home() {
       <SocialsRight display={false}></SocialsRight>
       <SocialsLeft display={loaded} />
       <Loader display={loaded} />
-      <div className='bg-dark-300 w-full pb-20'>
+      <div className='bg-dark-300 w-full '>
 
         <Navbar display={loaded}></Navbar>
         <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-108 h-screen overflow-y-auto overflow-x-hidden ' id='mainPage'>
@@ -34,6 +34,7 @@ export default function Home() {
           <Landing display={loaded} />
           <About></About>
           <Work/>
+          <div className='h-20'></div>
         </div>
 
       </div>
