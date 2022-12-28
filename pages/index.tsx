@@ -23,6 +23,7 @@ export default function Home() {
   }, [loaded])
   return (
     <>
+      <meta name="viewport" content="minimal-ui"></meta>
       <SocialsRight display={false}></SocialsRight>
       <SocialsLeft display={loaded} />
       <Loader display={loaded} />
