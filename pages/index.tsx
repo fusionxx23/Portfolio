@@ -20,28 +20,27 @@ export default function Home() {
     if (!loaded) {
       setTimeout(() => { setLoaded(true) }, 3200);
     } else {
-      window.scrollTo(1,0); 
+      window.scrollTo(1, 0);
     }
   }, [loaded])
   return (
     <>
 
-      <SocialsRight display={false}></SocialsRight>
-      <SocialsLeft display={loaded} />
-      <Loader display={loaded} />
-      <div className='bg-dark-300 w-full '>
 
+     
+        <SocialsRight display={false}></SocialsRight>
+        <SocialsLeft display={loaded} />
+        <Loader display={loaded} />
         <Navbar display={loaded}></Navbar>
         <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-108 h-screen overflow-y-auto overflow-x-hidden ' id='mainPage'>
 
           <Landing display={loaded} />
           <About></About>
-          <Work/>
+          <Work />
           <div className='h-20'></div>
         </div>
 
-      </div>
-
+      
     </>
 
   )

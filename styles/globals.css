@@ -60,6 +60,8 @@ body {
     position: relative;
     padding-bottom: env(safe-area-inset-bottom);
     min-height: 100vh;
+    --tw-bg-opacity: 1;
+    background-color: rgb(10 25 47 / var(--tw-bg-opacity));
 }
 
 
