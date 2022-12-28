@@ -35,7 +35,7 @@
 .transition-up {
     transition-property: transform, opacity;
     transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(.25, .25, 0.50, 1);
+    transition-timing-function: cubic-bezier(0, .25, 0.50, 1);
 }
 
 ::-webkit-scrollbar-track {
