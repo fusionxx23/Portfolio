@@ -19,6 +19,8 @@ export default function Home() {
   useEffect(() => {
     if (!loaded) {
       setTimeout(() => { setLoaded(true) }, 3200);
+    } else {
+      window.scrollTo(1,0); 
     }
   }, [loaded])
   return (
