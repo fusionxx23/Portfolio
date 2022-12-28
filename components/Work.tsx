@@ -30,11 +30,11 @@ export default function Work() {
 }
 
 
-function Project({ title, icons, img  }: { title: string, icons:any[], img:StaticImageData }) {
+function Project({ title, icons, img }: { title: string, icons: any[], img: StaticImageData }) {
   const [imageHover, setImgHover] = useState(false);
   return (
     <div className='flex justify-center'>
-      <section className='w-full h-108 my-2 sm:m-4 bg-dark-0 rounded-md p-6'>
+      <section className='w-full h-108 flex flex-col justify-between my-2 sm:m-4 bg-dark-0 rounded-md p-4 sm:p-6'>
         <div className='flex justify-between'>
           <BsFillTerminalFill size={20} className='text-white hover:text-light-100' />
           <div className='text-light-200'>
@@ -51,12 +51,15 @@ function Project({ title, icons, img  }: { title: string, icons:any[], img:Stati
           <Image className='rounded-md z-0 transition-all ease-in' src={img} alt={title}
             style={{ filter: `${imageHover ? '' : 'grayscale(100%)'}` }} />
         </div>
-        <div className='font-chivo text-light-300 text-sm'>
-          <p>Lorem ipsum text about something about the project at hand. The Division of two square numbers are a random number info.</p>
+        <div className=" flex flex-col">
+          <div className='font-chivo text-light-300 text-sm'>
+            <p>Lorem ipsum text about something about the project at hand. The Division of two square numbers are a random number info.</p>
+          </div>
+          <div className='flex'>
+            {icons.map((I, i) => <I className='text-light-200 m-2' size={20} key={i} />)}
+          </div>
         </div>
-        <div className='flex'>
-          {icons.map((I, i) => <I className='text-light-200 m-2' size={20} key={i}/>)}
-        </div>
+
       </section>
     </div>
 
