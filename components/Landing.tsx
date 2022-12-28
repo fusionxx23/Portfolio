@@ -3,7 +3,7 @@ import React from 'react'
 export default function Landing({ display }: { display: boolean }) {
     const c = '-translate-y-6 opacity-100'
     const dis = display ? c : 'opacity-0'
-    const anim = 'transition-up ease-out duration-500'
+    const anim = 'transition-up'
     return (
         <main className={`flex font-poppins justify-center text-light-100 h-screen md:h-screen mb-20`} style={{minHeight:'200px'}}>
             <div className={`w-full mt-30screen md:mt-72`}>

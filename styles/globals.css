@@ -19,6 +19,7 @@
 
 .transition-up {
     transition-property: opacity, transform;
+    transition-duration: 700ms;
 }
 
  ::-webkit-scrollbar-track {
