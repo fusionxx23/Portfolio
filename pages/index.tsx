@@ -20,18 +20,18 @@ export default function Home() {
     if (!loaded) {
       setTimeout(() => { setLoaded(true) }, 3200);
     } else {
-      window.scrollTo(1,0); 
+      window.document.querySelector('body')?.classList.remove('overflow-y-hidden')
+      window.document.querySelector('body')?.classList.add('overflow-y-scroll')
     }
   }, [loaded])
   return (
     <>
-
       <SocialsRight display={false}></SocialsRight>
       <SocialsLeft display={loaded} />
       <Loader display={loaded} />
-      <div className='bg-dark-300 w-full '>
+      <div className='bg-dark-300 w-full'>
         <Navbar display={loaded}></Navbar>
-        <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-108 min-h-fit overflow-y-hidden overflow-x-hidden ' id='mainPage'>
+        <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-108 min-h-fit overflow-x-hidden ' id='mainPage'>
 
           <Landing display={loaded} />
           <About></About>

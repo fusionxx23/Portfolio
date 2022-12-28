@@ -56,15 +56,18 @@
     background: rgba(0, 0, 0, 0);
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
-
 body {
     position: relative;
-    overflow-y: scroll;
     overflow-x: hidden;
     min-height: fit-content;
+}
+
+.ovs {
+    overflow-y: scroll;
+}
+
+.ovh {
+    overflow-y: hidden;
 }
 
 
