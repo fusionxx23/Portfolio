@@ -59,6 +59,7 @@
 body {
     position: relative;
     padding-bottom: env(safe-area-inset-bottom);
+    min-height: 100vh;
 }
 
 
