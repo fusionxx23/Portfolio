@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Landing({ display }: { display: boolean }) {
-    const c = '-translate-y-6 opacity-100'
+    const c = 'neg-translate opacity-100'
     const dis = display ? c : 'opacity-0 translate-y-0'
     const anim = 'transition-up'
     return (

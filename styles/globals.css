@@ -32,6 +32,10 @@
     animation-delay: 500ms;
 }
 
+.neg-translate {
+    transform: translateY(-20px);
+}
+
 .transition-up {
     transition-property: transform, opacity;
     transition-duration: 700ms;
