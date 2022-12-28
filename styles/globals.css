@@ -37,7 +37,7 @@
 }
 
 .transition-up {
-    transition-property: all;
+    transition-property: opacity, transform;
     transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
