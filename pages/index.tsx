@@ -10,6 +10,7 @@ import About from '../components/About/About'
 import SocialsRight from '../components/SocialsRight'
 import SocialsLeft from '../components/SocialsLeft'
 import Work from '../components/Work'
+import Contact from '../components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,12 +32,12 @@ export default function Home() {
       <Loader display={loaded} />
       <div className='bg-dark-300 w-full'>
         <Navbar display={loaded}></Navbar>
-        <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-108 min-h-fit overflow-x-hidden ' id='mainPage'>
+        <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-100 min-h-fit overflow-x-hidden ' id='mainPage'>
 
           <Landing display={loaded} />
           <About></About>
           <Work/>
-          <div className='h-20'></div>
+          <Contact/>
         </div>
 
       </div>
