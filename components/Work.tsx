@@ -35,7 +35,7 @@ function Project({ title, icons, img }: { title: string, icons: any[], img: Stat
   const [imageHover, setImgHover] = useState(false);
   return (
     <div className='flex justify-center'>
-      <section className='w-full h-112  flex flex-col justify-between my-2 sm:m-4 bg-dark-0 rounded-md p-4 sm:p-6'>
+      <section className='w- flex flex-col justify-between my-2 sm:m-4 bg-dark-0 rounded-md p-4 sm:p-6'>
         <div className='flex justify-between'>
           <BsFillTerminalFill size={20} className='text-white hover:text-light-100' />
           <div className='text-light-200'>

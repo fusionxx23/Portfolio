@@ -1,7 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
 import Navbar from '../components/Navbar'
 import Loader from '../components/Loader/Loader'
 import Landing from '../components/Landing'
@@ -11,22 +8,44 @@ import SocialsRight from '../components/SocialsRight'
 import SocialsLeft from '../components/SocialsLeft'
 import Work from '../components/Work'
 import Contact from '../components/Contact'
+import Sidebar from '../components/Sidebar'
+import SidebarProvider from '../libs/hooks/Sidebar/SidebarProvider'
+import useSidebarProvider from '../libs/hooks/Sidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
+  const { sidebar } = useSidebarProvider();
+  const b = window.document.querySelector('body')?.classList; 
+  const removeHidden = () => {b?.remove('overflow-y-hidden')}
+  const removeScroll = () => {b?.remove('overflow-y-scroll')}
+  const addScroll = () => {b?.add('overflow-y-scroll')}
+  const addHidden = () => {{b?.add('overflow-y-hidden')}}
 
   useEffect(() => {
     if (!loaded) {
       setTimeout(() => { setLoaded(true) }, 3200);
     } else {
-      window.document.querySelector('body')?.classList.remove('overflow-y-hidden')
-      window.document.querySelector('body')?.classList.add('overflow-y-scroll')
+      removeHidden(); 
+      addScroll(); 
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loaded])
+  useEffect(() => {
+    if(sidebar) {
+      removeScroll(); 
+      addHidden(); 
+    } else {
+      removeHidden(); 
+      addScroll(); 
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sidebar])
+  console.log((loaded && !sidebar)); 
   return (
     <>
+      <Sidebar />
       <SocialsRight display={false}></SocialsRight>
       <SocialsLeft display={loaded} />
       <Loader display={loaded} />
@@ -36,12 +55,12 @@ export default function Home() {
 
           <Landing display={loaded} />
           <About></About>
-          <Work/>
-          <Contact/>
+          <Work />
+          <Contact />
         </div>
 
       </div>
-    </>
 
+    </>
   )
 }

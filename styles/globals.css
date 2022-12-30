@@ -29,20 +29,7 @@
     height: 6px;
 }
 
-@keyframes up {
-    0% {
-        opacity: 0;
-        transform: translateY(42px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 
-.animation-delay-500 {
-    animation-delay: 500ms;
-}
 
 .neg-translate {
     transform: translateY(-20px);
@@ -73,6 +60,12 @@ body {
     overflow-x: hidden;
     min-height: fit-content;
 }
+@media screen and (max-width: 500px) {
+    .hide::-webkit-scrollbar {
+        display: none; 
+    }
+}
+
 
 .ovs {
     overflow-y: scroll;

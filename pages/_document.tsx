@@ -1,16 +1,15 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { useState, useEffect } from 'react';
+import SidebarProvider from '../libs/hooks/Sidebar/SidebarProvider'
+
 
 export default function document() {
-
-
   return (
     <Html>
       <Head />
-      <body className='overflow-y-hidden'>
-        <Main />
-        <NextScript />
-      </body>
+        <body className='hide'>
+          <Main />
+          <NextScript />
+        </body>   
     </Html>
   )
 
