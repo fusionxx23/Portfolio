@@ -9,7 +9,7 @@ export default function Navbar({ display }: { display: boolean }) {
     return (
         <>
             <div onClick={() => { setSidebar(!sidebar) }}
-                className={`sm:hidden transition-all ease-in  ${sidebar ? 'rotate-180' : ''} duration-200 fixed right-3 top-0 mt-3 z-40 text-light-200`}>
+                className={`sm:hidden transition-all ease-in origin-center delay-75 ${sidebar ? 'rotate-180' : ''} duration-200 fixed right-3 top-0 mt-3 z-40 text-light-200`}>
                 <RxCaretLeft size={44}></RxCaretLeft>
             </div>
             {sidebar && <div className='w-screen h-screen fixed z-10 bg-black bg-opacity-40'>
