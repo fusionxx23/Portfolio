@@ -17,28 +17,30 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
   const { sidebar } = useSidebarProvider();
-  const b = window.document.querySelector('body')?.classList; 
-  const removeHidden = () => {b?.remove('overflow-y-hidden')}
-  const removeScroll = () => {b?.remove('overflow-y-scroll')}
-  const addScroll = () => {b?.add('overflow-y-scroll')}
-  const addHidden = () => {{b?.add('overflow-y-hidden')}}
+  const b = (window:any) => window?.document?.querySelector('body')?.classList; 
+  const removeHidden = (window: any) => {b(window)?.remove('overflow-y-hidden')}
+  const removeScroll = (window: any) => {b(window)?.remove('overflow-y-scroll')}
+  const addScroll = (window: any) => {b(window)?.add('overflow-y-scroll')}
+  const addHidden = (window: any) => {b(window)?.add('overflow-y-hidden')}
 
   useEffect(() => {
     if (!loaded) {
       setTimeout(() => { setLoaded(true) }, 3200);
     } else {
-      removeHidden(); 
-      addScroll(); 
+      removeHidden(window); 
+      addScroll(window); 
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loaded])
   useEffect(() => {
+    if(!loaded)
+      return; 
     if(sidebar) {
-      removeScroll(); 
-      addHidden(); 
+      removeScroll(window); 
+      addHidden(window); 
     } else {
-      removeHidden(); 
-      addScroll(); 
+      removeHidden(window); 
+      addScroll(window); 
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sidebar])

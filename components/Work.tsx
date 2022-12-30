@@ -6,7 +6,7 @@ import { GoLinkExternal } from 'react-icons/go';
 import work from '../public/images/work/asteria-aio.png';
 import zinlabs from '../public/images/work/zinlabs.png';
 import beefy from '../public/images/work/beefy-blokes.png';
-import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron, SiReact } from 'react-icons/si';
+import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron, SiReact, SiNodedotjs } from 'react-icons/si';
 import Image, { StaticImageData } from 'next/image';
 export default function Work() {
   const [display, setDisplay] = useState(false);
@@ -22,7 +22,7 @@ export default function Work() {
       {/* Projects */}
       <div className='grid grid-cols-1 md:grid-cols-2 mt-2 '>
         <Project title={'ASTERIA-AIO'} icons={[SiReact, SiElectron, SiTypescript, SiTailwindcss]} img={work}></Project>
-        <Project title={'ZINLABS'} icons={[SiNextdotjs, SiTypescript, SiTailwindcss, SiSolidity, SiDocker]} img={zinlabs}></Project>
+        <Project title={'ZINLABS'} icons={[SiNextdotjs, SiNodedotjs, SiTypescript, SiTailwindcss, SiSolidity, SiDocker]} img={zinlabs}></Project>
         <Project title={'BEEFY-BLOKES'} icons={[SiNextdotjs, SiTypescript, SiTailwindcss]} img={beefy}></Project>
         <Project title={'BUTERIN-CARDS'} icons={[SiSolidity, SiNextdotjs, SiTypescript, SiTailwindcss]} img={work}></Project>
       </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { InView, useInView } from 'react-intersection-observer';
-import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron } from 'react-icons/si';
+import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron, SiNodedotjs } from 'react-icons/si';
 import TechIcon from './TechIcon';
 import ImageSection from './ProfileImage';
 let text = 'Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.'
@@ -32,6 +32,7 @@ export default function About() {
             <TechIcon Icon={SiNextdotjs} title={'Next.js'}></TechIcon>
             <TechIcon Icon={SiElectron} title={'Electron'}/>
             <TechIcon Icon={SiSolidity} title={'Solidity'}></TechIcon>
+            <TechIcon Icon={SiNodedotjs} title={'Node.js'}></TechIcon>
             <TechIcon Icon={SiTailwindcss} title={'Tailwindcss'}></TechIcon>
             <TechIcon Icon={SiTypescript} title={'Typescript'}></TechIcon>
             <TechIcon Icon={SiDocker} title={'Docker'}></TechIcon>

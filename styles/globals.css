@@ -27,6 +27,7 @@
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
+    background: #0a192f; 
 }
 
 
@@ -79,7 +80,7 @@ body {
 /* Handle */
 
  ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: rgb(103, 103, 106);
     border-radius: 8px;
 }
 

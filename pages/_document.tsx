@@ -6,7 +6,7 @@ export default function document() {
   return (
     <Html>
       <Head />
-        <body className='hide'>
+        <body className='hide overflow-y-hidden'>
           <Main />
           <NextScript />
         </body>   
