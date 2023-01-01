@@ -8,6 +8,11 @@ import zinlabs from '../public/images/work/zinlabs.png';
 import beefy from '../public/images/work/beefy-blokes.png';
 import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron, SiReact, SiNodedotjs } from 'react-icons/si';
 import Image, { StaticImageData } from 'next/image';
+
+let lorem = 'Lorem ipsum text about something about the project at hand. The Division of two square numbers are a random number info.'
+let asteria = 'NFT Tools desktop app with: Eth Minting, Opensea Sniping, Magic Eden Sniping, Candy Machine Minting, Wallet Distributor and Consolidator, Wallet Creator, NFT Gallery, NFT Login, and more.'
+let beefyBlokes = 'Beefy Blokes minting website made with NEXT.js.'
+let zinlabsTxt = 'NFT Monitoring website made with NEXT.js and Node.  Monitor collection listings and sales, and create custom desktop notifications with parameters(price, rarity, traits). '
 export default function Work() {
   const [display, setDisplay] = useState(false);
   return (
@@ -15,26 +20,26 @@ export default function Work() {
       if (inView) {
         setDisplay(true);
       }
-    }} className={`duration-700 pt-20 sm:pt-0 transition-up ease-out 
+    }} className={`duration-700 pt-20 sm:pt-0 transition-up ease-out
       ${display ? ' translate-in ' : 'opacity-0 translate-y-3 translate-x-3 md:-translate-y-24 md:-translate-x-20'}`}>
 
       <h1 className='content-header'>Previous Projects<PurpleSpan text={'.'} /></h1>
       {/* Projects */}
       <div className='grid grid-cols-1 md:grid-cols-2 mt-2 '>
-        <Project title={'ASTERIA-AIO'} icons={[SiReact, SiElectron, SiTypescript, SiTailwindcss]} img={work}></Project>
-        <Project title={'ZINLABS'} icons={[SiNextdotjs, SiNodedotjs, SiTypescript, SiTailwindcss, SiSolidity, SiDocker]} img={zinlabs}></Project>
-        <Project title={'BEEFY-BLOKES'} icons={[SiNextdotjs, SiTypescript, SiTailwindcss]} img={beefy}></Project>
-        <Project title={'BUTERIN-CARDS'} icons={[SiSolidity, SiNextdotjs, SiTypescript, SiTailwindcss]} img={work}></Project>
+        <Project title={'ASTERIA-AIO'} icons={[SiReact, SiElectron, SiTypescript, SiTailwindcss]} img={work} desc={asteria}></Project>
+        <Project title={'ZINLABS'} icons={[SiNextdotjs, SiNodedotjs, SiTypescript, SiTailwindcss, SiSolidity, SiDocker]} img={zinlabs} desc={zinlabsTxt}></Project>
+        <Project title={'BEEFY-BLOKES'} icons={[SiNextdotjs, SiTypescript, SiTailwindcss]} img={beefy} desc={beefyBlokes}></Project>
+        <Project title={'BUTERIN-CARDS'} icons={[SiSolidity, SiNextdotjs, SiTypescript, SiTailwindcss]} img={work} desc={lorem}></Project>
       </div>
     </InView>
   )
 }
 
 
-function Project({ title, icons, img }: { title: string, icons: any[], img: StaticImageData }) {
+function Project({ title, icons, img, desc }: { title: string, icons: any[], img: StaticImageData, desc: string }) {
   const [imageHover, setImgHover] = useState(false);
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center  hover:-translate-y-2 transition-all cursor-pointer'>
       <section className='w- flex flex-col justify-between my-2 sm:m-4 bg-dark-0 rounded-md p-4 sm:p-6'>
         <div className='flex justify-between'>
           <BsFillTerminalFill size={20} className='text-white hover:text-light-100' />
@@ -57,8 +62,8 @@ function Project({ title, icons, img }: { title: string, icons: any[], img: Stat
 
 
         <div className=" flex flex-col">
-          <div className='font-chivo text-light-300 text-sm'>
-            <p>Lorem ipsum text about something about the project at hand. The Division of two square numbers are a random number info.</p>
+          <div className='font-chivo text-light-300 text-sm mt-1'>
+            <p>{desc}</p>
           </div>
           <div className='flex'>
             {icons.map((I, i) => <I className='text-light-200 m-2' size={20} key={i} />)}
