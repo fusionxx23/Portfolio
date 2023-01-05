@@ -4,9 +4,10 @@
 @import "./Loader.module.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Poppins&display=swap');
+
 @layer components {
     .translate-out {
-       @apply opacity-0 translate-y-3 translate-x-3 md:translate-y-20 md:translate-x-24
+       @apply opacity-0 translate-y-3 translate-x-3 md:translate-y-6 md:translate-x-6
     }
     .translate-in {
         @apply opacity-100 translate-x-0 translate-y-0
@@ -23,7 +24,9 @@
 
 
 /* Track */
-
+html, body {
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;

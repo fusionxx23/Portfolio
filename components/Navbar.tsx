@@ -6,6 +6,7 @@ import useSidebarProvider from '../libs/hooks/Sidebar'
 
 export default function Navbar({ display }: { display: boolean }) {
     const { setSidebar, sidebar } = useSidebarProvider();
+  
     return (
         <>
             <div onClick={() => { setSidebar(!sidebar) }}
@@ -21,10 +22,10 @@ export default function Navbar({ display }: { display: boolean }) {
                         <h1 className='text-light-100 text-3xl' >TT</h1>
                     </div>
                     <div className='sm:flex hidden text-light-200 items-center'>
-                        <NavLink title={'About'}></NavLink>
-                        <NavLink title={'Experience'}></NavLink>
-                        <NavLink title={'Work'}></NavLink>
-                        <NavLink title={'Contact'}></NavLink>
+                        <NavLink title={'About'} link={'#About'}></NavLink>
+                        {/* <NavLink title={'Experience'} link={'#Experience'}></NavLink> */}
+                        <NavLink  title={'Work'} link={'#Work'}></NavLink>
+                        <NavLink title={'Contact'} link={'#Contact'}></NavLink>
                         <div className='px-4 ml-3 text-light-100 border-2 py-2 hover:bg-100 cursor-pointer hover:bg-opacity-25 rounded-md border-light-100 flex items-center justify-center'>
                             Resume
                         </div>
@@ -38,9 +39,10 @@ export default function Navbar({ display }: { display: boolean }) {
 }
 
 
-function NavLink({ title }: { title: string }) {
+function NavLink({ title, link }: { title: string, link: string }) {
+
     return (
-        <Link className='mx-1 lg:mx-3 font-chivo' href={''}>
+        <Link className='mx-1 lg:mx-3 font-chivo' href={link}>
             <h1 className='hover:text-light-100 text-sm  md:text-lg cursor-pointer'>{title}<span className='text-light-100'>.</span></h1>
         </Link>
     )
