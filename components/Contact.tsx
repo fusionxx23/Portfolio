@@ -11,11 +11,11 @@ export default function Contact() {
       }
     }} id="Contact" className={`mt-28 duration-700 pt-40 sm:pt-0 2xl:px-10 transition-up ease-out 
       ${display ? ' translate-in ' : 'opacity-0 translate-y-1 translate-x-1 md:translate-y-4 md:-translate-x-4'}`}>
-      <h1 className='content-header'>
+      <h1 className='content-header text-center'>
         Contact Me<PurpleSpan text='.' />
       </h1>
       <div className="flex justify-center">
-        <p className='w-80 text-light-300 text-center'>Currently looking for new work, short term or long term.  Contact me through email or discord, thanks! </p>
+        <p className='w-72 text-light-300 text-center font-chivo'>Currently looking for new work, short term or long term.  Contact me through email or discord, thanks! </p>
       </div>
       {/* Socials */}
       <div>

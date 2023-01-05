@@ -24,8 +24,8 @@
 
 
 /* Track */
-html, body {
-    scroll-behavior: smooth;
+*, html {
+    scroll-behavior: smooth !important;
 }
 ::-webkit-scrollbar {
     width: 6px;

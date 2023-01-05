@@ -51,7 +51,7 @@ export default function Home() {
       <SocialsRight display={false}></SocialsRight>
       <SocialsLeft display={loaded} />
       <Loader display={loaded} />
-      <div className='bg-dark-300 w-full'>
+      <div className='bg-dark-300 w-full scroll-smooth'>
         <Navbar display={loaded}></Navbar>
         <div className='w-full px-7 sm:px-28 md:px-20 lg:px-48 xl:px-80 2xl:px-100 min-h-fit overflow-x-hidden ' id='mainPage'>
 

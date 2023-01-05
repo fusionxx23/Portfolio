@@ -5,7 +5,7 @@ export default function Landing({ display }: { display: boolean }) {
     const dis = display ? c : 'opacity-0'
     const anim = 'transition-up'
     return (
-        <main className={`flex font-poppins justify-center text-light-100 h-screen md:h-screen`} style={{minHeight:'200px'}}>
+        <main id="Landing" className={`flex font-poppins justify-center text-light-100 h-screen md:h-screen`} style={{minHeight:'200px'}}>
             <div className={`w-full mt-30screen md:mt-72`}>
                 <h2 className={`mb-5 delay-500 text-md md:text-lg pl-1 ${dis} ${anim} font-chivo`}>Hi, my name is</h2>
                 <h1 className={`text-4xl md:text-7xl delay-700 mb-3 font-bold ${dis} ${anim}`} style={{ color: '#ccd6f6' }}>Travis Tarpley</h1>
