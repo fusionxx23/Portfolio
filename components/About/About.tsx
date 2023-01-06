@@ -3,7 +3,7 @@ import { InView, useInView } from 'react-intersection-observer';
 import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron, SiNodedotjs, SiFirebase } from 'react-icons/si';
 import TechIcon from './TechIcon';
 import ImageSection from './ProfileImage';
-let text = 'Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.'
+let text = 'Hello! As a full stack software engineer, I specialize in creating immersive and intuitive digital experiences. With expertise in both frontend and backend development, I am skilled in a range of programming languages including Python, JavaScript, and Java. I am well-versed in agile development methodologies and thrive in collaborative environments where I can continuously learn and grow as a developer. I am passionate about decentralized applications and am dedicated to staying up-to-date with the latest technologies in the field. Seeking a challenging and dynamic opportunity to use my skills and experience to make a meaningful impact.'
 
 
 export default function About() {
