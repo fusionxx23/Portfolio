@@ -36,14 +36,14 @@ export default function Navbar({ display }: { display: boolean }) {
             </div>}
 
             <div className={`fixed top-0 pb-2 w-full ${isScrolled ? 'drop-shadow-[0_3px_3px_rgba(0,0,0)]' : ''} sm:pb-0 z-10 duration-300 bg-dark-300 transition-all ${display ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 '} `}>
-                <div className="flex justify-between items-center px-4 md:px-20 pt-4">
+                <div className="flex justify-between items-center px-4 md:px-20 ">
                     <Link href={'#Landing'}>
                         <div className='cursor-pointer'>
                             <h1 className='text-light-100 text-3xl' >TT</h1>
                         </div>
                     </Link>
 
-                    <div className='sm:flex hidden text-light-200 items-center'>
+                    <div className='sm:flex items-center hidden text-light-200 py-4'>
                         <NavLink title={'About'} link={'#About'}></NavLink>
                         {/* <NavLink title={'Experience'} link={'#Experience'}></NavLink> */}
                         <NavLink title={'Work'} link={'#Work'}></NavLink>
