@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { RxCaretLeft } from 'react-icons/rx'
 import useSidebarProvider from '../libs/hooks/Sidebar'
 import NavAnimatedIcon from './NavAnimatedIcon';
@@ -7,17 +7,35 @@ import NavAnimatedIcon from './NavAnimatedIcon';
 
 export default function Navbar({ display }: { display: boolean }) {
     const { setSidebar, sidebar } = useSidebarProvider();
-
+    const [isScrolled, setIsScrolled] = useState(false); 
+    let anim = `${display ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 '}`
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY; // => scroll position
+        if(scrollPosition > 0 && !isScrolled) {
+            setIsScrolled(true); 
+        }
+        if(scrollPosition === 0) {
+            setIsScrolled(false); 
+        }
+    };
+    useEffect(() => {
+        handleScroll();
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
     return (
         <>
             <div onClick={() => { setSidebar(!sidebar) }}
-                className={`sm:hidden transition-all ease-in origin-center delay-75 duration-200 fixed right-3 top-0 mt-3 z-40 text-light-200`}>
-                <NavAnimatedIcon open={sidebar}/>
+                className={`sm:hidden transition-all ease-in origin-center delay-75 ${anim} duration-200  fixed right-3 top-0 mt-3 z-40 text-light-200`}>
+                <NavAnimatedIcon open={sidebar} />
             </div>
             {sidebar && <div className='w-screen h-screen fixed z-10 bg-black bg-opacity-40'>
             </div>}
 
-            <div className={`fixed top-0 pb-2 w-full drop-shadow-[0_3px_3px_rgba(0,0,0)] sm:pb-0 sm:drop-shadow-none z-10 duration-500 bg-dark-300 sm:bg-transparent transition-all ${display ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 '} `}>
+            <div className={`fixed top-0 pb-2 w-full ${isScrolled ? 'drop-shadow-[0_3px_3px_rgba(0,0,0)]' : ''} sm:pb-0 z-10 duration-300 bg-dark-300 transition-all ${display ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 '} `}>
                 <div className="flex justify-between items-center px-4 md:px-20 pt-4">
                     <Link href={'#Landing'}>
                         <div className='cursor-pointer'>
