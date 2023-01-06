@@ -35,7 +35,7 @@ export default function Navbar({ display }: { display: boolean }) {
             {sidebar && <div className='w-screen h-screen fixed z-10 bg-black bg-opacity-40'>
             </div>}
 
-            <div className={`fixed top-0 pb-2 w-full ${isScrolled ? 'drop-shadow-[0_3px_3px_rgba(0,0,0)]' : ''} sm:pb-0 z-10 duration-300 bg-dark-300 transition-all ${display ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 '} `}>
+            <div className={`fixed top-0 pb-2 w-full ${isScrolled ? 'drop-shadow-[0_5px_5px_rgba(0,0,0,0.59)]' : ''} sm:pb-0 z-10 duration-300 bg-dark-300 transition-all ${display ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 '} `}>
                 <div className="flex justify-between items-center px-4 md:px-20 ">
                     <Link href={'#Landing'}>
                         <div className='cursor-pointer'>
