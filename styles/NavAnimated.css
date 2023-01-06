@@ -1,6 +1,6 @@
 
 .Rectangle1 {
-    transform: translateX(0);
+    transform: translateX(-4px);
 }
 
 .Rectangle2 {
@@ -8,5 +8,5 @@
 }
 
 .Rectangle3 {
-    transform: translateY(30px) translateX(-44px);
+    transform: translateY(37px) translateX(-54px);
 }
