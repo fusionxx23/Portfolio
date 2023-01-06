@@ -29,17 +29,17 @@ export default function Navbar({ display }: { display: boolean }) {
     return (
         <>
             <div onClick={() => { setSidebar(!sidebar) }}
-                className={`sm:hidden transition-all ease-in origin-center delay-75 ${anim} duration-200  fixed right-3 top-0 mt-3 z-40 text-light-200`}>
+                className={`sm:hidden transition-all ease-in origin-center delay-75 ${anim} duration-200  fixed right-3 top-0 pt-2 z-40 text-light-200`}>
                 <NavAnimatedIcon open={sidebar} />
             </div>
             {sidebar && <div className='w-screen h-screen fixed z-10 bg-black bg-opacity-40'>
             </div>}
 
-            <div className={`fixed top-0 pb-2 w-full ${isScrolled ? 'drop-shadow-[0_5px_5px_rgba(0,0,0,0.59)]' : ''} sm:pb-0 z-10 duration-300 bg-dark-300 transition-all ${display ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 '} `}>
+            <div className={`fixed top-0  w-full ${isScrolled ? 'drop-shadow-[0_5px_5px_rgba(0,0,0,0.59)]' : ''} sm:pb-0 z-10 duration-300 bg-dark-300 transition-all ${display ? 'translate-y-0 opacity-100' : '-translate-y-5 opacity-0 '} `}>
                 <div className="flex justify-between items-center px-4 md:px-20 ">
                     <Link href={'#Landing'}>
                         <div className='cursor-pointer'>
-                            <h1 className='text-light-100 text-3xl' >TT</h1>
+                            <h1 className='text-light-100 text-3xl py-2' >TT</h1>
                         </div>
                     </Link>
 
