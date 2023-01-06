@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FiGithub, FiTwitter, FiMail, FiLinkedin } from 'react-icons/fi'
 import { RxDiscordLogo } from 'react-icons/rx'
 import { display } from '../libs/types';
@@ -14,9 +15,9 @@ export default function SocialsLeft({ display }: display) {
                 </div>
 
                 <div className={`font-chivo text-light-200 `}>
-                    <SocialIcon Icon={FiGithub} />
-                    <SocialIcon Icon={RxDiscordLogo} />
-                    <SocialIcon Icon={FiTwitter} />
+                    <SocialIcon Icon={FiGithub} link={'https://github.com/fusionxx23'}/>
+                    <SocialIcon Icon={RxDiscordLogo} link={'https://discord.gg/XEPb5da9tx'}/>
+                    <SocialIcon Icon={FiTwitter} link={'https://twitter.com/tarpley_travis'}/>
                     <SocialIcon Icon={FiMail} />
                     <SocialIcon Icon={FiLinkedin} />
                 </div>
@@ -31,10 +32,12 @@ export default function SocialsLeft({ display }: display) {
     )
 }
 
-function SocialIcon({ Icon }: { Icon: any }) {
+function SocialIcon({ Icon, link }: { Icon: any, link?: string }) {
     return (
         <div className='px-10 hover:scale-125 py-4 cursor-pointer hover:-translate-y-1 hover:text-light-100 transition-all ease-out'>
-            <Icon className='' size={20} />
+            <Link href={link ? link : ''}>
+                <Icon className='' size={20} />
+            </Link>
         </div>
     )
 }

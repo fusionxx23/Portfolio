@@ -29,7 +29,7 @@ export default function Navbar({ display }: { display: boolean }) {
     return (
         <>
             <div onClick={() => { setSidebar(!sidebar) }}
-                className={`sm:hidden transition-all ease-in origin-center delay-75 ${anim} duration-200  fixed right-3 top-0 pt-2 z-40 text-light-200`}>
+                className={`sm:hidden transition-all origin-center delay-75 ${anim} duration-200  fixed right-3 top-0 pt-2 z-40 text-light-200`}>
                 <NavAnimatedIcon open={sidebar} />
             </div>
             {sidebar && <div className='w-screen h-screen fixed z-10 bg-black bg-opacity-40'>
@@ -65,7 +65,7 @@ function NavLink({ title, link }: { title: string, link: string }) {
 
     return (
         <Link className='mx-1 lg:mx-3 font-chivo' href={link}>
-            <h1 className='hover:text-light-100 text-sm  md:text-lg cursor-pointer'>{title}<span className='text-light-100'>.</span></h1>
+            <h1 className='hover:text-light-100 text-lg cursor-pointer'>{title}<span className='text-light-100'>.</span></h1>
         </Link>
     )
 }

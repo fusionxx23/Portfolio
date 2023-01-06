@@ -9,7 +9,7 @@ export default function Contact() {
       if (inView) {
         setDisplay(true);
       }
-    }} id="Contact" className={`mt-28 duration-700 pt-40 sm:pt-0 2xl:px-10 transition-up ease-out 
+    }} id="Contact" className={`duration-700 pt-40 sm:pt-40 2xl:px-10 transition-up ease-out 
       ${display ? ' translate-in ' : 'opacity-0 translate-y-1 translate-x-1 md:translate-y-4 md:-translate-x-4'}`}>
       <h1 className='content-header text-center'>
         Contact Me<PurpleSpan text='.' />

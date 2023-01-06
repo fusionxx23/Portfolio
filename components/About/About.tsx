@@ -14,7 +14,7 @@ export default function About() {
         setDisplay(true);
       }
     }} id="About" className={`duration-700 mb-20 2xl:px-5 transition-up ${display ? 'translate-in' : 'translate-out'}`}>
-      <h1 className='text-light-200 font-chivo font-bold z-40 mb-8 pt-20 text-2xl sm:text-4xl' >About Me<span className='text-light-100'>.</span></h1>
+      <h1 className='text-light-200 font-chivo font-bold z-40 mb-8 pt-28 text-2xl sm:text-4xl' >About Me<span className='text-light-100'>.</span></h1>
       <div className='flex flex-wrap md:flex-nowrap justify-between'>
         <div className='text-light-200 text-md font-chivo'>
           <h2>{text}</h2>
