@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import "./Loader.module.css";
+@import "./NavAnimated.css";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Poppins&display=swap');
 

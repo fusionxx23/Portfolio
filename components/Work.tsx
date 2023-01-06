@@ -3,11 +3,13 @@ import { InView } from 'react-intersection-observer';
 import PurpleSpan from './PurpleSpan';
 import { BsFillTerminalFill } from 'react-icons/bs';
 import { GoLinkExternal } from 'react-icons/go';
+import {FiGithub} from 'react-icons/fi'; 
 import work from '../public/images/work/asteria-aio.png';
 import zinlabs from '../public/images/work/zinlabs.png';
 import beefy from '../public/images/work/beefy-blokes.png';
 import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron, SiReact, SiNodedotjs, SiFirebase } from 'react-icons/si';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 let lorem = 'Lorem ipsum text about something about the project at hand. The Division of two square numbers are a random number info.'
 let asteria = 'NFT Tools desktop app with: Eth Minting, Opensea Sniping, Magic Eden Sniping, Candy Machine Minting, Wallet Distributor and Consolidator, Wallet Creator, NFT Gallery, NFT Login, and more.'
@@ -27,8 +29,8 @@ export default function Work() {
         {/* Projects */}
         <div className='grid grid-cols-1 md:grid-cols-2 mt-2 '>
           <Project title={'ASTERIA-AIO'} icons={[SiReact, SiElectron, SiTypescript, SiTailwindcss]} img={work} desc={asteria}></Project>
-          <Project title={'ZINLABS'} icons={[SiNextdotjs, SiNodedotjs, SiTypescript, SiTailwindcss, SiSolidity, SiDocker, SiFirebase]} img={zinlabs} desc={zinlabsTxt}></Project>
-          <Project title={'BEEFY-BLOKES'} icons={[SiNextdotjs, SiTypescript, SiTailwindcss]} img={beefy} desc={beefyBlokes}></Project>
+          <Project title={'ZINLABS'} icons={[SiNextdotjs, SiNodedotjs, SiTypescript, SiTailwindcss, SiSolidity, SiDocker, SiFirebase]} img={zinlabs} desc={zinlabsTxt} link={'https://zin-labs.xyz'}></Project>
+          <Project title={'BEEFY-BLOKES'} icons={[SiNextdotjs, SiTypescript, SiTailwindcss]} img={beefy} desc={beefyBlokes} link={'https://beef-blokes.vercel.app'} github={'https://github.com/fusionxx23/Beef-Blokes'}></Project>
           <Project title={'BUTERIN-CARDS'} icons={[SiSolidity, SiNextdotjs, SiTypescript, SiTailwindcss]} img={work} desc={lorem}></Project>
         </div>
       </div>
@@ -38,16 +40,19 @@ export default function Work() {
 }
 
 
-function Project({ title, icons, img, desc }: { title: string, icons: any[], img: StaticImageData, desc: string }) {
+function Project({ title, icons, img, desc, github, link }: { title: string, icons: any[], img: StaticImageData, desc: string, link?: string, github?: string }) {
   const [imageHover, setImgHover] = useState(false);
   return (
     <div className='flex justify-center  hover:-translate-y-2 transition-all cursor-pointer'>
       <section className='w- flex flex-col justify-between my-2 sm:m-4 bg-dark-0 rounded-md p-4 sm:p-6'>
         <div className='flex justify-between'>
           <BsFillTerminalFill size={20} className='text-white hover:text-light-100' />
-          <div className='text-light-200'>
-            <GoLinkExternal className='cursor-pointer' size={20} />
+          
+          <div className='text-light-200 flex'>
+           {link && <Link href={link}><GoLinkExternal className='cursor-pointer mx-1 hover:text-light-100' size={20} /></Link>} 
+           {github && <Link href={github}><FiGithub className='cursor-pointer ml-1 hover:text-light-100' size={20} /></Link>} 
           </div>
+       
         </div>
         <h1 className='text-light-200 mt-4 text-2xl font-chivo hover:text-light-100'>{title}</h1>
         <div className='flex justify-center'>

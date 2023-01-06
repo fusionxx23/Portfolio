@@ -1,0 +1,12 @@
+
+.Rectangle1 {
+    transform: translateX(0);
+}
+
+.Rectangle2 {
+    transform: translateX(0);
+}
+
+.Rectangle3 {
+    transform: translateY(30px) translateX(-44px);
+}

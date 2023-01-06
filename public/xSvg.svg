@@ -1,0 +1,11 @@
+<svg width="286" height="286" viewBox="0 0 286 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="Frame2">
+        <rect width="286" height="286" fill="white" />
+        <rect id="Rectangle1" x="59.8492" y="51" width="73" height="21" rx="4"
+            transform="rotate(45 59.8492 51)" fill="#373737" />
+        <rect id="Rectangle2" x="50.0155" y="221.635" width="242" height="21" rx="4"
+            transform="rotate(-45 50.0155 221.635)" fill="#373737" />
+        <rect id="Rectangle3" x="106.849" y="98" width="175.803" height="21" rx="4"
+            transform="rotate(45 106.849 98)" fill="#373737" />
+    </g>
+</svg>
