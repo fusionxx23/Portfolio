@@ -3,8 +3,7 @@ import { InView, useInView } from 'react-intersection-observer';
 import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron, SiNodedotjs, SiFirebase } from 'react-icons/si';
 import TechIcon from './TechIcon';
 import ImageSection from './ProfileImage';
-let text = 'Hello! As a full stack software engineer, I specialize in creating immersive and intuitive digital experiences. With expertise in both frontend and backend development, I am skilled in a range of programming languages including Python, JavaScript, and Java. I am well-versed in agile development methodologies and thrive in collaborative environments where I can continuously learn and grow as a developer. I am passionate about decentralized applications and am dedicated to staying up-to-date with the latest technologies in the field. Seeking a challenging and dynamic opportunity to use my skills and experience to make a meaningful impact.'
-
+let text = `Hello! I began my developer journey by creating scripts to automate tasks in Chrome, and since have expanded my skills to include desktop, mobile, backend development. As a full stack software engineer, I specialize in creating immersive and intuitive digital experiences. Seeking a challenging and dynamic opportunity to use my skills and experience to make a meaningful impact.`
 
 export default function About() {
   const [display, setDisplay] = useState(false);
