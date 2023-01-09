@@ -3,7 +3,7 @@ import { InView, useInView } from 'react-intersection-observer';
 import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron, SiNodedotjs, SiFirebase } from 'react-icons/si';
 import TechIcon from './TechIcon';
 import ImageSection from './ProfileImage';
-let text = `Hello! As a full-stack developer with over three years of experience, I have created numerous types of apps including Chrome extensions, desktop applications, websites and mobiles applications. Here are some of the type of projects ive worked on: NFT, DeFi, trading bots, web scraping, and Chrome checkout tools.`
+let text = `Hello! As a full-stack developer with over three years of experience, I have created numerous types of apps like Chrome extensions and desktop, mobile, and web applications. Here are some of the type of projects ive worked on: NFT, DeFi, trading bots, web scraping, and Chrome checkout tools.`
 
 export default function About() {
   const [display, setDisplay] = useState(false);
