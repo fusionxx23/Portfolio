@@ -67,10 +67,9 @@ body {
 }
 @media screen and (max-width: 500px) {
     .hide::-webkit-scrollbar {
-       
+       display: none; 
     }
 }
-
 
 .ovs {
     overflow-y: scroll;
