@@ -1,17 +1,16 @@
 import React, { useState } from 'react'
 import { InView } from 'react-intersection-observer';
 import PurpleSpan from '../PurpleSpan';
-import { BsFillTerminalFill } from 'react-icons/bs';
-import { GoLinkExternal } from 'react-icons/go';
-import {FiGithub} from 'react-icons/fi'; 
 import work from '../../public/images/work/asteria-aio.png';
 import zinlabs from '../../public/images/work/zinlabs.png';
 import beefy from '../../public/images/work/beefy-blokes.png';
-import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron, SiReact, SiNodedotjs, SiFirebase } from 'react-icons/si';
+import nftDiffusionImg from '../../public/images/work/nft-diffusion-site.png'
+import { SiNextdotjs, SiSolidity, SiTypescript, SiDocker, SiTailwindcss, SiElectron, SiReact, SiNodedotjs, SiFirebase, SiGo } from 'react-icons/si';
 
 import { Project } from './Project';
 
 let lorem = 'Lorem ipsum text about something about the project at hand. The Division of two square numbers are a random number info.'
+let nftDiffusion = "NFT Project that lets users mint thier own nft using Stable Diffusion."
 let asteria = 'NFT Tools desktop app with: Eth Minting, Opensea Sniping, Magic Eden Sniping, Candy Machine Minting, Wallet Distributor and Consolidator, Wallet Creator, NFT Gallery, NFT Login, and more.'
 let beefyBlokes = 'Beefy Blokes minting website made with NEXT.js.'
 let zinlabsTxt = 'NFT Monitoring website made with NEXT.js and Node.  Monitor collection listings and sales, and create custom desktop notifications with parameters(price, rarity, traits). '
@@ -31,7 +30,7 @@ export default function Work() {
           <Project title={'ASTERIA-AIO'} icons={[SiReact, SiElectron, SiTypescript, SiTailwindcss]} img={work} desc={asteria}></Project>
           <Project title={'ZINLABS'} icons={[SiNextdotjs, SiNodedotjs, SiTypescript, SiTailwindcss, SiSolidity, SiDocker, SiFirebase]} img={zinlabs} desc={zinlabsTxt} link={'https://zin-labs.xyz'}></Project>
           <Project title={'BEEFY-BLOKES'} icons={[SiNextdotjs, SiTypescript, SiTailwindcss]} img={beefy} desc={beefyBlokes} link={'https://beef-blokes.vercel.app'} github={'https://github.com/fusionxx23/Beef-Blokes'}></Project>
-          <Project title={'BUTERIN-CARDS'} icons={[SiSolidity, SiNextdotjs, SiTypescript, SiTailwindcss]} img={work} desc={lorem}></Project>
+          <Project title={'NFT-DIFFUSION'} icons={[SiSolidity, SiNextdotjs, SiTypescript, SiTailwindcss, SiDocker, SiGo]} github={'https://github.com/Nft-Diffusion'} img={nftDiffusionImg} desc={nftDiffusion}></Project>
         </div>
       </div>
 
