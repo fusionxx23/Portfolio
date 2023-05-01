@@ -13,7 +13,7 @@ export default function Landing({ display }: { display: boolean }) {
                 <h3 className={`text-3xl md:text-6xl delay-1000 ${dis} ${anim}`} style={{ color: '#8892b0' }}>Im a Full-Stack Dapp Developer</h3>
                 <h4 className={`text-sm md:text-md md:w-104 mt-7  font-chivo text-light-400 delay-1000 ${dis} ${anim}`}>I’m a software engineer specializing in building exceptional digital experiences. Currently, I’m focused on building applications for the decentralized web.  </h4>
                 <div className={`flex mt-14 delay-1000 font-chivo ${dis} ${anim}`} >
-                    <Link href={'#Work'}>
+                    <Link  href={'#Work'}>
                         <div className='px-6 py-3 border border-light-100 transition-all rounded-md cursor-pointer ease-out  hover:bg-light-100 hover:bg-opacity-30'>
                             <h1 className='text-md'>Check out my work!</h1>
                         </div>

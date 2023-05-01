@@ -35,7 +35,7 @@ export default function SocialsLeft({ display }: display) {
 function SocialIcon({ Icon, link }: { Icon: any, link?: string }) {
     return (
         <div className='px-10 hover:scale-125 py-4 cursor-pointer hover:-translate-y-1 hover:text-light-100 transition-all ease-out'>
-            <Link href={link ? link : ''}>
+            <Link rel="noopener noreferrer" target="_blank" href={link ? link : ''}>
                 <Icon className='' size={20} />
             </Link>
         </div>
