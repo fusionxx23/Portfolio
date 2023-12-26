@@ -28,8 +28,8 @@ export default function About() {
               <div className='w-4 bg-light-100' style={{ height: '2px' }}>
               </div>
             </div> */}
-            <TechIcon Icon={SiNextdotjs} title={'Next.js'}></TechIcon>
             
+            <TechIcon Icon={SiNextdotjs} title={'Next.js'}></TechIcon>
             <TechIcon Icon={SiElectron} title={'Electron'}/>
             <TechIcon Icon={SiSolidity} title={'Solidity'}></TechIcon>
             <TechIcon Icon={SiNodedotjs} title={'Node.js'}></TechIcon>
