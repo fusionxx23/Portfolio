@@ -14,11 +14,11 @@ export default function LinkHoc({
   const { ref, scrolled } = useScrollAnimation({ multiplier });
   const anim = `${
     !scrolled ? "translate-x-20 opacity-0" : " opacity-100"
-  } transition-all duration-500`;
+  } transition-all `;
   return (
     <div
       ref={ref}
-      className={`${anim}  hover:-translate-y-2 bg-dark-0 rounded-md`}
+      className={`${anim} duration-700 delay-50  hover:-translate-y-2 bg-dark-0 rounded-md`}
     >
       {!link ? (
         <div>{children}</div>
