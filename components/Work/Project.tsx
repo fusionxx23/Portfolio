@@ -5,6 +5,7 @@ import { BsFillTerminalFill } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 import { GoLinkExternal } from "react-icons/go";
 import LinkHoc from "./LinkHoc";
+import { useScrollAnimation } from "../../libs/hooks/scrollAnimation";
 
 export function Project({
   title,
@@ -13,6 +14,7 @@ export function Project({
   desc,
   github,
   link,
+  multiplier,
 }: {
   title: string;
   icons: any[];
@@ -20,12 +22,17 @@ export function Project({
   desc: string;
   link?: string;
   github?: string;
+  multiplier: number;
 }) {
   const [imageHover, setImgHover] = useState(false);
+  const { ref, scrolled } = useScrollAnimation({ multiplier });
   return (
-    <LinkHoc link={link}>
-      <div className="flex justify-center  hover:-translate-y-2 transition-all cursor-pointer">
-        <section className="w-full flex flex-col justify-start  my-4 md:my-2 md:m-4 bg-dark-0 rounded-md p-4 sm:p-6">
+    <LinkHoc link={link} multiplier={multiplier}>
+      <div
+        ref={ref}
+        className={` flex justify-center  hover:-translate-y-2 transition-all duration-300 cursor-pointer`}
+      >
+        <section className="w-full flex flex-col justify-start  h-full  p-4 sm:p-6">
           <div>
             <div className="flex justify-between">
               <BsFillTerminalFill
