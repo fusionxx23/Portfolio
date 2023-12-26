@@ -19,9 +19,9 @@ export default function Sidebar() {
           link={"#Contact"}
           onClick={closeSidebar}
         />
-        <div className="text-light-100 border border-light-100 px-4 py-2 rounded-md mt-4">
+        {/* <div className="text-light-100 border border-light-100 px-4 py-2 rounded-md mt-4">
           <h1>Resume</h1>
-        </div>
+        </div> */}
       </div>
     </div>
   );
