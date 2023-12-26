@@ -14,9 +14,9 @@ export default function LinkHoc({
   const { ref, scrolled } = useScrollAnimation({ multiplier });
   const anim = `${
     !scrolled ? "translate-x-20 opacity-0" : " opacity-100"
-  } transition-all`;
+  } transition-all duration-500`;
   return (
-    <div ref={ref} className={` ${anim} bg-dark-0 rounded-md`}>
+    <div ref={ref} className={`${anim}  bg-dark-0 rounded-md`}>
       {!link ? (
         <div>{children}</div>
       ) : (

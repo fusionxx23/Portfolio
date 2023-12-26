@@ -82,7 +82,7 @@ export default function Work() {
             icons={[SiReact, SiElectron, SiTypescript, SiTailwindcss]}
             img={work}
             desc={asteria}
-            multiplier={2}
+            multiplier={0}
           ></Project>
 
           <Project
@@ -99,7 +99,7 @@ export default function Work() {
             img={zinlabs}
             desc={zinlabsTxt}
             link={"https://zin-labs.xyz"}
-            multiplier={3}
+            multiplier={1}
           ></Project>
 
           <Project
@@ -109,7 +109,7 @@ export default function Work() {
             desc={beefyBlokes}
             link={"https://beef-blokes.vercel.app"}
             github={"https://github.com/fusionxx23/Beef-Blokes"}
-            multiplier={4}
+            multiplier={0}
           ></Project>
           <Project
             title={"NFT-DIFFUSION"}
@@ -124,7 +124,7 @@ export default function Work() {
             github={"https://github.com/Nft-Diffusion"}
             img={nftDiffusionImg}
             desc={nftDiffusion}
-            multiplier={5}
+            multiplier={1}
           ></Project>
         </div>
       </div>
