@@ -16,7 +16,10 @@ export default function LinkHoc({
     !scrolled ? "translate-x-20 opacity-0" : " opacity-100"
   } transition-all duration-500`;
   return (
-    <div ref={ref} className={`${anim}  bg-dark-0 rounded-md`}>
+    <div
+      ref={ref}
+      className={`${anim}  hover:-translate-y-2 bg-dark-0 rounded-md`}
+    >
       {!link ? (
         <div>{children}</div>
       ) : (
