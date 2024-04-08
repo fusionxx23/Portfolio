@@ -5,11 +5,14 @@ import work from "../../public/images/work/asteria-aio.png";
 import zinlabs from "../../public/images/work/zinlabs.png";
 import beefy from "../../public/images/work/beefy-blokes.png";
 import sage from "../../public/images/work/sage.png";
+import sunnyRevival from "../../public/images/work/sunny-revival.png";
+import isekaiMoney from "../../public/images/work/isekai-money.png";
 import buterin from "../../public/images/work/buterin.png";
 import nftDiffusionImg from "../../public/images/work/nft-diffusion-site.png";
 import {
   SiNextdotjs,
   SiSolidity,
+  SiRemix,
   SiTypescript,
   SiDocker,
   SiTailwindcss,
@@ -18,6 +21,7 @@ import {
   SiNodedotjs,
   SiFirebase,
   SiGo,
+  SiGraphql,
 } from "react-icons/si";
 
 import { Project } from "./Project";
@@ -60,6 +64,24 @@ export default function Work() {
         {/* Projects */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 mt-2 ">
           <Project
+            title={"ISEKAI-MONEY"}
+            icons={[SiNextdotjs, SiTypescript, SiGraphql, SiGo]}
+            img={isekaiMoney}
+            desc={
+              "A design optimization platform that builds on top of Camelot DEX."
+            }
+            link="https://isekai.money"
+            multiplier={0}
+          />
+          <Project
+            title={"SUNNY-REVIVAL"}
+            icons={[SiRemix, SiTypescript, SiGraphql]}
+            img={sunnyRevival}
+            desc={"An ecommerce site built on top of shopify and hydrogen."}
+            link="https://sunny-revival.com"
+            multiplier={1}
+          />
+          <Project
             title={"SAGE-BET"}
             icons={[SiNextdotjs, SiTypescript, SiSolidity]}
             img={sage}
@@ -98,7 +120,7 @@ export default function Work() {
             ]}
             img={zinlabs}
             desc={zinlabsTxt}
-            link={"https://zin-labs.xyz"}
+            // link={"https://zin-labs.xyz"}
             multiplier={1}
           ></Project>
 

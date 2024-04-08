@@ -29,8 +29,11 @@ export default function SocialsLeft({ display }: display) {
             Icon={FiTwitter}
             link={"https://twitter.com/tarpley_travis"}
           />
-          <SocialIcon Icon={FiMail} />
-          <SocialIcon Icon={FiLinkedin} />
+          <SocialIcon Icon={FiMail} link="mailto:travistarpley0@gmail.com" />
+          <SocialIcon
+            Icon={FiLinkedin}
+            link="https://www.linkedin.com/in/travis-tarpley/"
+          />
         </div>
 
         <div className="flex justify-center mt-4">

@@ -59,6 +59,7 @@ export default function Navbar({ display }: { display: boolean }) {
             <NavLink title={"About"} link={"#About"}></NavLink>
             {/* <NavLink title={'Experience'} link={'#Experience'}></NavLink> */}
             <NavLink title={"Work"} link={"#Work"}></NavLink>
+            <NavLink title={"Resume"} link={"resume.pdf"}></NavLink>
             <NavLink title={"Contact"} link={"#Contact"}></NavLink>
             {/* <div className="px-4 ml-3 text-light-100 border-2 py-2 hover:bg-100 cursor-pointer hover:bg-opacity-25 rounded-md border-light-100 flex items-center justify-center">
               Resume
