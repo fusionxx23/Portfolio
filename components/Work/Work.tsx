@@ -78,7 +78,7 @@ export default function Work() {
             icons={[SiRemix, SiTypescript, SiGraphql]}
             img={sunnyRevival}
             desc={"An ecommerce site built on top of shopify and hydrogen."}
-            link="https://sunny-revival.com"
+            // link="https://sunny-revival.com"
             multiplier={1}
           />
           <Project
