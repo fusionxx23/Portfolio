@@ -3,7 +3,7 @@ import SidebarProvider from "../libs/hooks/Sidebar/SidebarProvider";
 import "../styles/globals.css";
 export default function layout({ children }: { children: ReactNode }) {
   return (
-    <html>
+    <html lang="en">
       <body>
         <div>
           <SidebarProvider>{children}</SidebarProvider>

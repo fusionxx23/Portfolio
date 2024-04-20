@@ -10,7 +10,7 @@ import SocialsLeft from "../components/SocialsLeft";
 import Work from "../components/Work/Work";
 import useSidebarProvider from "../libs/hooks/Sidebar";
 
-export default function page() {
+export default function Page() {
   const [loaded, setLoaded] = useState(false);
   const { sidebar } = useSidebarProvider();
   const b = (window: any) => window?.document?.querySelector("body")?.classList;
