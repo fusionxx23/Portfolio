@@ -20,20 +20,20 @@ export default function SocialsLeft({ display }: display) {
         </div>
 
         <div className={`font-chivo text-light-200 `}>
-          <SocialIcon Icon={FiGithub} link={"https://github.com/fusionxx23"} />
-          <SocialIcon
-            Icon={RxDiscordLogo}
-            link={"https://discord.gg/XEPb5da9tx"}
-          />
-          <SocialIcon
-            Icon={FiTwitter}
-            link={"https://twitter.com/tarpley_travis"}
-          />
-          <SocialIcon Icon={FiMail} link="mailto:travistarpley0@gmail.com" />
           <SocialIcon
             Icon={FiLinkedin}
             link="https://www.linkedin.com/in/travis-tarpley/"
           />
+          <SocialIcon Icon={FiGithub} link={"https://github.com/fusionxx23"} />
+          <SocialIcon
+            Icon={FiTwitter}
+            link={"https://twitter.com/tarpley_travis"}
+          />
+          <SocialIcon
+            Icon={RxDiscordLogo}
+            link={"https://discord.gg/XEPb5da9tx"}
+          />
+          <SocialIcon Icon={FiMail} link="mailto:travistarpley0@gmail.com" />
         </div>
 
         <div className="flex justify-center mt-4">
