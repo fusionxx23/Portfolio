@@ -50,7 +50,7 @@ export default function Work() {
       className="mb-20"
     >
       <div
-        className={`duration-700 sm:pt-0 transition-up ease-out
+        className={`duration-300 sm:pt-0 transition-up ease-out
       ${
         display
           ? " translate-in "
