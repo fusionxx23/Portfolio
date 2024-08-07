@@ -30,9 +30,9 @@ export function Project({
     <LinkHoc link={link} multiplier={multiplier}>
       <div
         ref={ref}
-        className={` flex justify-center   transition-all duration-300 cursor-pointer`}
+        className={` flex justify-center transition-all duration-150 cursor-pointer`}
       >
-        <section className="w-full flex flex-col justify-start  h-full  p-4 sm:p-6">
+        <section className="w-full flex flex-col justify-start h-full p-4 sm:p-6">
           <div>
             <div className="flex justify-between">
               <BsFillTerminalFill

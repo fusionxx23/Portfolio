@@ -3,7 +3,6 @@ import React from "react";
 import { useScrollAnimation } from "../../libs/hooks/scrollAnimation";
 
 export default function LinkHoc({
-  link,
   children,
   multiplier,
 }: {
@@ -18,15 +17,9 @@ export default function LinkHoc({
   return (
     <div
       ref={ref}
-      className={`${anim} duration-700 delay-50  hover:-translate-y-2 bg-dark-0 rounded-md`}
+      className={`${anim} duration-300 delay-50  hover:-translate-y-2 bg-dark-0 rounded-md`}
     >
-      {!link ? (
-        <div>{children}</div>
-      ) : (
-        <Link className=" " href={link}>
-          {children}
-        </Link>
-      )}
+      {children}
     </div>
   );
 }
